@@ -17,18 +17,17 @@ app.use(compression());
 
 const dominiosPermitidos = [process.env.FRONTEND_URL];
 
-const corsOption = {
+const corsOptions = {
   origin: function (origin, callback) {
-    if (dominiosPermitidos.indexOf(origin) !== -1) {
+    if (dominiosPermitidos.indexOf(origin) !== -1 || !origin) {
       callback(null, true);
     } else {
-      callback(new Error("No permitido por cors"));
+      callback(new Error("No permitido por CORS"));
     }
   },
 };
 
-// app.use(cors(corsOption));
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use("/api/toners", clienteRoutes);
 
