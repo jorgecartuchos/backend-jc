@@ -35,7 +35,7 @@ export const enviarEmail = async (data) => {
 
       Teléfono: +57 (320) 568 2187
       Correo Electrónico: contacto.jorgecartuchos@gmail.com
-      Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de este correo, enviar un mensaje por WhatsApp, o visitar nuestra Política de Devoluciones en http://localhost:5173/devoluciones.
+      Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de este correo, enviar un mensaje por WhatsApp, o visitar nuestra Política de Devoluciones en https://frontend-jc.vercel.app/devoluciones.
 
       Este correo es confidencial. Si lo ha recibido por error, por favor notifíquenos y elimínelo de inmediato.
       `,
@@ -46,8 +46,8 @@ export const enviarEmail = async (data) => {
       <p>Gracias por tu paciencia y confianza en Jorge Cartuchos.</p>
       <p>Saludos cordiales,</p>
       <p><strong>Jorge Cartuchos</strong></p>
-      <a href="http://localhost:5173/" target="_blank">
-        <img src="https://drive.usercontent.google.com/download?id=1EJxbYEEz0_wk8D8AWETQ-OgeJQlEfKiR&authuser=0" alt="Firma Jorge Cartuchos" style="width: 720px; height: auto;" />
+      <a href="https://frontend-jc.vercel.app/" target="_blank">
+        <img src="https://drive.google.com/file/d/1NiEETxreD2eiztf4BJUdsaJeoKnlF3hQ/view?usp=sharing" alt="Firma Jorge Cartuchos" style="width: 720px; height: auto;" />
       </a>
       <div style="font-family: Arial, sans-serif; font-size: 14px; color: #333; margin-top: 20px;">
       
@@ -58,7 +58,7 @@ export const enviarEmail = async (data) => {
         <h4 style="margin: 0; font-size: 16px; color: #000; margin-top: 10px;">Contacto</h4>
         <p style="margin: 5px 0;">Teléfono: +57 (320) 568 2187</p>
         <p style="margin: 5px 0;">Correo Electrónico: <a href="mailto:contacto.jorgecartuchos@gmail.com" style="color: #007BFF;">contacto.jorgecartuchos@gmail.com</a></p>
-        <p style="font-size: 11px;">Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de este correo, enviar un mensaje por WhatsApp, o visitar nuestra <a href="http://localhost:5173/devoluciones" target="_blank" style="color: #007BFF;">Política de Devoluciones</a>.</p>
+        <p style="font-size: 11px;">Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de este correo, enviar un mensaje por WhatsApp, o visitar nuestra <a href="https://frontend-jc.vercel.app/devoluciones" target="_blank" style="color: #007BFF;">Política de Devoluciones</a>.</p>
 
         <p style="font-size: 11px;">Este correo es confidencial. Si lo ha recibido por error, por favor notifíquenos y elimínelo de inmediato.</p>
       </div>
