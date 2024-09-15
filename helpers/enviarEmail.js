@@ -47,7 +47,7 @@ export const enviarEmail = async (data) => {
       <p>Saludos cordiales,</p>
       <p><strong>Jorge Cartuchos</strong></p>
       <a href="https://frontend-jc.vercel.app/" target="_blank">
-        <img src="https://drive.google.com/file/d/1NiEETxreD2eiztf4BJUdsaJeoKnlF3hQ/view?usp=sharing" alt="Firma Jorge Cartuchos" style="width: 720px; height: auto;" />
+        <img src="https://drive.google.com/uc?export=view&id=1NiEETxreD2eiztf4BJUdsaJeoKnlF3hQ" alt="Firma Jorge Cartuchos" style="width: 720px; height: auto;" />
       </a>
       <div style="font-family: Arial, sans-serif; font-size: 14px; color: #333; margin-top: 20px;">
       
