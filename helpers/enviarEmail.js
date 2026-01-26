@@ -18,6 +18,7 @@ export const enviarEmail = async (data) => {
     const sendEmail = await transporter.sendMail({
       from: '"Jorge Cartuchos" <jorgelo1469@gmail.com>',
       to: correo,
+      cc: 'contacto.jorgecartuchos@gmail.com',
       subject: "Solicitud recibida",
       text: `Hola ${nombre},
 
@@ -34,30 +35,33 @@ export const enviarEmail = async (data) => {
 
       Teléfono: +57 | 320 568 2187
       Correo Electrónico: jorgelo1469@gmail.com
-      Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de este correo, enviar un mensaje por WhatsApp, o visitar nuestra Política de Devoluciones en https://www.jorgecartuchos.com/devoluciones.
+      Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de este correo, enviar un mensaje por WhatsApp, o visitar nuestra Política de Devoluciones en https://jorgecartuchos.vercel.app/devoluciones.
 
       Este correo es confidencial. Si lo ha recibido por error, por favor notifíquenos y elimínelo de inmediato.
       `,
       html: `
       <p>Hola ${nombre},</p>
       <p>¡Gracias por contactarte con Jorge Cartuchos! He recibido tu solicitud correctamente y la estoy revisando para ofrecerte la mejor asistencia posible. Te contactaré en breve con más detalles.</p>
-      <p>Si tienes alguna pregunta adicional mientras tanto, no dudes en responder a este correo o llamarme directamente.</p>
+      <p>Si tienes alguna pregunta adicional mientras tanto, no dudes en responder a este correo o <a href="tel:+573205682187">llamarme directamente al +57 320 568 2187</a>.
+      </p>
+
       <p>Gracias por tu paciencia y confianza en Jorge Cartuchos.</p>
       <p>Saludos cordiales,</p>
       <p><strong>Jorge López</strong></p>
-      <a href="https://www.jorgecartuchos.com/" target="_blank">
-        <img src="https://drive.google.com/uc?export=view&id=1OYjzJlDkYsmddNY_rGG7JFUuiwAABWCr" alt="Firma Jorge Cartuchos" style="width: 720px; height: auto;" />
+      <a href="https://jorgecartuchos.vercel.app/" target="_blank">
+        <img
+          src="https://drive.usercontent.google.com/download?id=19Bzc8wLzkwbSaxRDHJUJ_pUiO2kjPeTN&export=view&authuser=0"
+          alt="Firma Jorge Cartuchos"
+          width="720"
+          style="width:100%; max-width:720px; height:auto; display:block;"
+        />
       </a>
       <div style="font-family: Arial, sans-serif; font-size: 14px; color: #333; margin-top: 20px;">
       
-        <a style="display: inline-block; margin-right: 5px;" href="https://www.facebook.com/profile.php?id=100067410135870"><img src="https://drive.google.com/uc?export=view&id=11TCCVcLVKdby0oaqjbjj0jNviPgz82jw"/></a>
-
-        <a style="display: inline-block;" href="https://wa.me/573205682187?text=Hola%20Jorge%20Cartuchos%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20t%C3%B3ners%20disponibles.%20%C2%A1Gracias!"><img src="https://drive.google.com/uc?export=view&id=1hCK9nzRtYgQU1XrNfGuzQ6bL4T1OIzQx"/></a>
-
         <h4 style="margin: 0; font-size: 16px; color: #000; margin-top: 10px;">Contacto</h4>
-        <p style="margin: 5px 0;">Teléfono: +57 (320) 568 2187</p>
+        <p style="margin: 5px 0;">Teléfono: <a href="tel:+573205682187">+57 320 568 2187</a></p>
         <p style="margin: 5px 0;">Correo Electrónico: <a href="mailto:jorgelo1469@jorgelo1469@gmail.com</a></p>
-        <p style="font-size: 11px;">Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de este correo, enviar un mensaje por WhatsApp, o visitar nuestra <a href="https://www.jorgecartuchos.com/devoluciones" target="_blank" style="color: #007BFF;">Política de Devoluciones</a>.</p>
+        <p style="font-size: 11px;">Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través de este correo, enviar un mensaje por WhatsApp, o visitar nuestra <a href="https://jorgecartuchos.vercel.app/devoluciones" target="_blank" style="color: #007BFF;">Política de Devoluciones</a>.</p>
 
         <p style="font-size: 11px;">Este correo es confidencial. Si lo ha recibido por error, por favor notifíquenos y elimínelo de inmediato.</p>
       </div>
@@ -66,7 +70,8 @@ export const enviarEmail = async (data) => {
 
     const sendEmailInterno = await transporter.sendMail({
       from: '"Notificaciones Jorge Cartuchos" <jorgelo1469@gmail.com',
-      to: "jorgelo1469@gmail.com",
+      to: 'jorgelo1469@gmail.com',
+      cc: 'contacto.jorgecartuchos@gmail.com',
       subject: `Nueva solicitud de ${nombre}`,
       html: `
         <p>Se ha recibido una nueva solicitud de contacto:</p>
